@@ -1,0 +1,253 @@
+body, h1, h2,h3,h4, ul, li, p,a {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  color: #292929;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body{
+  max-width: 1228px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 1.25rem 0 1.25rem;
+  
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2.5rem 0 2.5rem 0;
+  gap: 20px;
+  align-items: center;
+  
+}
+.logo {
+  max-width: 157px;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  
+}
+.menu a{
+  font-weight: 500;
+  font-size:1.5rem ;
+  line-height: 1.8rem;
+  display: inline-block;
+  padding:0.6rem 1rem ;
+  position: relative;
+  
+}
+.menu a:hover{
+  color: #DA2535;
+}
+.botao-entrar {
+  padding:0.6rem 3.75rem ;
+  font-weight: 600;
+  font-size:1.5rem ;
+  line-height: 1.8rem;
+  border: solid 2px #292929;
+  border-radius: 10px;
+}
+.botao-entrar:hover{
+  background-color: #DA2535;
+  color: #FBFBFB;
+  transition: 0.3s;
+}
+.sobre{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+.img-sobre{
+  justify-self: end;
+}
+.content-sobre{
+  align-self: center;
+}
+.content-sobre h1{
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+.content-sobre p{
+  padding:1.5rem 0 3rem 0  ;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+}
+.btn-cardapio{
+  padding: 1rem 5.8rem;
+  background: #DA2535;
+  color:#FBFBFB;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  border-radius: 10px;
+}
+.btn-cardapio:hover{
+  background: #B22222;
+  transition: 0.3s;
+}
+.forma{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 124px;
+}
+
+.content-forma h2{
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 130%;
+  
+}
+.content-forma p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  padding: 1.5rem 0 2.5rem 0;
+}
+.content-forma a{
+  color: #DA2535;
+  text-decoration-line: underline;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+
+}
+.content-forma a:hover{
+ color: #292929;
+ transition: 0.3s;
+}
+.container-produtos{
+  display: grid;
+  grid-template-columns:  repeat(3, 3fr);
+  justify-items: center;
+  gap: 44px
+  
+}
+.container-produtos h3{
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 5.25rem 0 3.3rem 0;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  ;
+}
+.produto a{
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  display: inline-block;
+  margin: 3.125rem 0 1rem 0;
+
+}
+.produto p:not(.produto-preco){
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6rem;
+  text-align: center;
+  max-width: 27ch;
+  padding-bottom: 2rem;
+}
+.produto-preco{
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  
+}
+.produto img{
+  max-width: 289px;
+  max-height: 291px;
+}
+.produto{
+  padding: 0 1.562rem 4rem 1.562rem;
+  box-shadow:inset  0 150px 0 0   #ffff ;
+  background: #F3F3F3;
+  display: grid;
+  justify-items: center;
+  border-radius: 32px   ;
+}
+.container-coment{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 20px ;
+  
+}
+.container-coment h3{
+  grid-column: 1 / -1;
+  padding: 6.25rem 0 3rem 0;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 123%;
+}
+.comentario{
+  padding: 2.5rem;
+  background: #F3F3F3;
+  border-radius: 16px;
+
+}
+.comentario p:not(.nome){
+  padding-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+} 
+
+.comentario .nome{
+  padding: 1.5rem 0 1rem 0;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 123%;
+}
+.comentario img{
+  max-width: 120px;
+  max-height: 120px;
+}
+.localizacao{
+  display: grid;
+}
+.localizacao h3{
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 123%;
+  padding: 3.25rem 0 3rem 0;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 0 4rem 0;
+}
+.logo-footer{
+  padding-right: 3.125rem;
+  max-width: 157px;
+  max-height: 49px;
+}
+.infor a,p{
+  display: block;
+  padding-bottom: 8px;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  
+}
+.infor p{
+
+}
+.infor h4 {
+  padding-bottom: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 123%;
+}
