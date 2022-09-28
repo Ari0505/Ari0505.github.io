@@ -6,9 +6,15 @@ body, h1, h2,h3,h4, ul, li, p,a {
   color: #292929;
 }
 img {
-  display: block;
+ 
   max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: right;
 }
+  
+
 body{
   max-width: 1228px;
   margin: 0 auto;
@@ -80,6 +86,7 @@ body{
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 160%;
+  max-width: 38ch;
 }
 .btn-cardapio{
   padding: 1rem 5.8rem;
@@ -99,6 +106,13 @@ body{
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 124px;
+}
+.img-forma img{
+  width: 610px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
 }
 
 .content-forma h2{
@@ -129,19 +143,17 @@ body{
 }
 .container-produtos{
   display: grid;
-  grid-template-columns:  repeat(3, 3fr);
+  grid-template-columns:  repeat(3, 1fr);
   justify-items: center;
-  gap: 44px
-  
+  gap: 44px;
 }
-.container-produtos h3{
-  grid-column: 1 / -1;
+.h3-produtos{
   text-align: center;
   padding: 5.25rem 0 3.3rem 0;
   font-weight: 600;
   font-size: 3rem;
   line-height: 3.6rem;
-  ;
+  
 }
 .produto a{
   font-weight: 500;
@@ -180,7 +192,7 @@ body{
 }
 .container-coment{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 0px 20px ;
   
 }
@@ -241,13 +253,106 @@ body{
   line-height: 2rem;
   
 }
-.infor p{
-
-}
 .infor h4 {
   padding-bottom: 1.5rem;
   font-style: normal;
   font-weight: 500;
   font-size: 2rem;
   line-height: 123%;
+}
+@media (max-width: 800px){
+  .menu{
+    gap: 10px;
+  }
+  .container{
+    
+    padding: 1.5rem 0 1rem 0;
+  }
+  .content-sobre h1{
+   font-size: 2.5rem;
+  }
+
+  .forma{
+    gap: 20px;
+    padding-top: 3rem;
+  }
+  .forma h2{
+    font-size: 2.5rem;
+  }
+  .forma p{
+    padding: 1rem 0 1rem 0;
+  }
+  .h3-produtos{
+    padding: 3rem 0 2rem 0;
+    font-size: 2.5rem;
+  }
+  .container-produtos{
+    overflow-x: scroll;
+    
+  }
+  .produto{
+    width: 300px;
+    height: 500px;
+  }
+  .container-coment h3{
+    padding: 3rem 0 2rem 0;
+    font-size: 2.5rem;
+  }
+  .container-coment{
+   grid-template-columns: auto;
+   gap: 10px;
+  }
+  .comentario{
+    display: flex;
+    gap: 20px;
+    padding: 1.5rem;
+  }
+  .localizacao h3{
+    padding: 3rem 0 2rem 0;
+    font-size: 2.5rem;
+  }
+  .mapa{
+    width: auto;
+  }
+  .logo-footer{
+    display: none;
+  }
+  .footer{
+    padding: 3rem 0 2rem 0;
+    justify-items: center;
+  }
+  .infor h4{
+    font-size: 1.5rem;
+  }
+}
+.js-content{
+  display: none;
+}
+
+ .img-sobre.js-content,.content-forma.ativo{
+  display: block !important;
+  animation: show .5s forwards
+}
+@keyframes show{
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.js-scroll{
+  opacity: 0;
+  transition: .3s;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js-scroll.ativo{
+  opacity: 1;
+  transition: .3s;
+  transform: translate3d(0, 0, 0);
+
+ 
 }
